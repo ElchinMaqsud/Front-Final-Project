@@ -1,0 +1,296 @@
+// Start of Holiday section
+#holiday{
+    height: 60px;
+    background: #2d3e52;
+    .holiday-title{
+      h1{
+        font-size:  1.6667em;
+        color: white;
+        font-weight: normal;
+        line-height: 56px;
+      }
+    }
+    .holiday-selection{
+      display: flex;
+      align-items: center;
+        ul{
+          display: flex;
+          align-items: center;
+          padding: 0;
+          li{
+            list-style: none;
+            color: white;
+            font-size: 11px;
+            font-weight: bolder;
+            margin-right: 5px;
+            cursor: pointer;
+            transition: all .3s ease-in-out;
+            &:hover{
+                color: aqua;
+            }
+            
+            &::after{
+              content: "/";
+              color: #5a7ca3;
+            }
+          }
+          .last-spec-li{
+            list-style: none;
+            color: gold;
+            font-size: 11px;
+            font-weight: bolder;
+            cursor: pointer;
+            
+            &::after{
+              content: "";
+            }
+            &:hover{
+                color: gold;
+                
+            }
+          }
+        }
+    }
+  }
+//   End of Holiday section
+
+// Start of Suggestions section
+#suggestions{
+    background-image: url("http://www.soaptheme.net/html/travelo/images/pages/extra/holiday-banner1.jpg");
+    background-repeat: no-repeat;
+    background-position: 65% 50%;
+    h1{
+        font-size: 50px;
+        font-weight: normal;    
+        width: 100%;
+        color: white;
+        text-shadow: rgba(0, 0, 0, 0.25) -2px 2px 3px;
+    }
+    h2{
+        font-weight: normal;
+        color: rgb(253, 183, 20);
+        text-shadow: rgba(0, 0, 0, 0.25) -2px 2px 3px;
+    }
+}
+// End of Suggestions section
+
+// Start of Holiday-honeymoon section
+#holiday-honeymoon{
+    .row-holiday-tab{
+        position:relative;
+        top: -75px;
+        opacity: 0; 
+    }
+    .row-holiday-tab.active{
+        opacity:1;
+    }
+    ul{
+        li.active{
+            background: white;
+            i{
+                color:rgb(253, 183, 20);
+            }
+            a{
+                color: #01b7f2;
+            }
+        }
+    }
+    ul{
+        padding: 0;
+        margin: 0;
+        transform: translateY(-100px);
+        
+        
+        li{
+            list-style: none;
+            padding-left: 15px;
+            padding-top: 10px;
+            padding-right:15px;
+            padding-bottom: 10px;
+            background: rgba(128, 128, 128, 0.144);
+            margin-left: 5px;
+            &:hover{
+                background: white;
+                i{
+                   color:rgb(253, 183, 20);
+                }
+                a{
+                    color:#01b7f2;
+                }
+            }
+            i{
+                color: #4d4d4d;
+                font-size: 18px;
+                transition: all .2s ease-in-out;
+            }
+            a{
+                text-decoration: none;
+                color: black;
+                font-size: 14px;
+                font-weight: 600;
+                transition: all .2s ease-in-out;
+            }
+        }
+    }
+    .suggestion-info{
+        h1{
+            font-size: 20px;
+            color: #01b7f2;
+            font-weight: normal;
+        }
+        p{
+            font-size: 15px;
+            color: #838383;
+            line-height: 25px;
+        }
+    }
+    .suggestion-img{
+        width: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;  
+        }
+    }
+}
+@media screen and(min-width:484.9px){
+    #holiday-honeymoon{
+        ul{
+            transform: translateY(-91px);
+        }
+    }
+}
+
+#destinations {
+    background: #f5f2f2d8;
+
+    .dubai-info{
+        small{
+            margin-left: 14px;
+        }
+    }
+    
+    .destination1 {
+      width: 255px;
+      overflow: hidden;
+      .destination-img {
+        transition: all 0.4s ease-in-out;
+        overflow: hidden;
+        width: 100%;
+        position: relative;
+        img {
+          transform: scale(1);
+          transition: all 0.4s ease-in-out;
+        }
+        &:hover {
+          img {
+            transform: scale(1.2);
+          }
+          .overlay {
+            opacity: 1;
+            transform: scale(1) rotateY(360deg);
+            z-index: 1;
+          }
+        }
+      }
+  
+      .main-destination1 {
+        a {
+          text-decoration: none;
+          color: #232323;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            color: #01b7f2;
+          }
+        }
+        span {
+          font-size: 11px;
+          color: #232323;
+        }
+      }
+      .destination-price {
+        small {
+          font-size: 11px;
+          color: #232323;
+          display: block;
+        }
+        .price-span {
+          font-size: 19px;
+          color: #7db921;
+        }
+      }
+    }
+  
+    h2 {
+      font-size: 22px;
+      font-weight: 400;
+      margin-left: 14px;
+    }
+    img {
+      // position: relative;
+      transform: scale(1);
+    }
+    .overlay {
+      width: 255px;
+      height: 161px;
+      background: #01b6f273;
+      top: 0;
+      left: 0;
+      position: absolute;
+      transition: all 0.4s ease-in-out;
+      // z-index: 1;
+      transform: scale(0.7);
+      opacity: 0;
+      width: 100%;
+  
+      i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 45px;
+        color: white;
+        font-weight: 600;
+      }
+    }
+  }
+  #popular{
+      background: #f5f2f2d8;
+      h1{
+          font-size: 20px;
+          color: #2d3e52;
+          font-weight: normal;
+          margin-left: 12px;
+      }
+      .popular-info{
+          border-right: 1px solid white;
+          ul{
+              padding: 0;
+              li{
+                  list-style: none;
+                  &:hover{
+                    a{
+                        color: #01b7f2;
+                    }
+                    i{
+                        color: #01b7f2;
+                    }
+                }
+                  a{
+                      text-decoration: none;
+                      color: #2d3e52;
+                      transition: all .2s ease-in-out;
+                  }
+                  i{
+                      font-size: 13px;
+                      color: #838383;
+                      margin-right: 5px;
+                      transition: all .2s ease-in-out;
+                  }
+                  small{
+                      margin-left: 5px;
+                  }
+              }
+          }
+      }
+  }
